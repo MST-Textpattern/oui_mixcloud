@@ -74,10 +74,6 @@ namespace Oui\Player {
             );
         }
 
-        global $event;
-
-        if (txpinterface === 'admin' && ($event === 'prefs' || $event === 'plugin_prefs.oui_player_mixcloud')) {
-            Mixcloud::getInstance();
-        }
+        register_callback('Oui\Player\Mixcloud::getProvider', 'oui_player', 'plug_providers');
     }
 }
