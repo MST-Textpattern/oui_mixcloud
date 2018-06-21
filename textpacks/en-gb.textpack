@@ -1,8 +1,8 @@
 #Default language, en-us, en-gb
 #@admin
 oui_player_provider_mixcloud => Mixcloud
-oui_player_mixcloud => Mixcloud player (oui_player_mixcloud)
-oui_player_mixcloud_prefs => Display the Mixcloud player prefs
+oui_player_mixcloud => Mixcloud player
+oui_player_mixcloud_prefs => Display the Mixcloud player preferences
 oui_player_mixcloud_width => Player width
 oui_player_mixcloud_height => Player height
 oui_player_mixcloud_ratio => Player ratio by default
