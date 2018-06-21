@@ -74,6 +74,5 @@ namespace Oui\Player {
             );
         }
 
-        register_callback('Oui\Player\Mixcloud::getProvider', 'oui_player', 'plug_providers');
     }
 }
