@@ -73,6 +73,15 @@ namespace Oui\Player {
                 ),
             );
         }
+    }
+}
 
+namespace {
+    function oui_mixcloud($atts) {
+        return oui_player(array_merge(array('provider' => 'mixcloud'), $atts));
+    }
+
+    function oui_if_mixcloud($atts, $thing) {
+        return oui_if_player(array_merge(array('provider' => 'mixcloud'), $atts), $thing);
     }
 }
