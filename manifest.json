@@ -1,5 +1,5 @@
 {
-    "name"        : "oui_player_mixcloud",
+    "name"        : "oui_mixcloud",
     "description" : "Mixcloud extension for oui_player v2+",
     "version"     : "1.0.0-dev",
     "type"        : 1,

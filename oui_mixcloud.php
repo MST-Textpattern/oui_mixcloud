@@ -1,11 +1,11 @@
 <?php
 
 /*
- * This file is part of oui_player_mixcloud,
+ * This file is part of oui_mixcloud,
  * a oui_player v2+ extension to easily embed
  * Mixcloud customizable audio players in Textpattern CMS.
  *
- * https://github.com/NicolasGraph/oui_player_mixcloud
+ * https://github.com/NicolasGraph/oui_mixcloud
  *
  * Copyright (C) 2018 Nicolas Morand
  *
