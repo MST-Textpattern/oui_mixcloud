@@ -44,15 +44,9 @@ namespace Oui {
             protected static $src = '//www.mixcloud.com/';
             protected static $glue = array('widget/iframe/?feed=', '?', '&amp;');
             protected static $dims = array(
-                'width'  => array(
-                    'default' => '100%',
-                ),
-                'height' => array(
-                    'default' => '400',
-                ),
-                'ratio'  => array(
-                    'default' => '',
-                ),
+                'width'  => '100%',
+                'height' => '400',
+                'ratio'  => '',
             );
             protected static $params = array(
                 'autoplay'     => array(
