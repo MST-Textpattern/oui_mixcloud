@@ -36,10 +36,8 @@ namespace Oui {
         class Mixcloud extends Provider
         {
             protected static $patterns = array(
-                'audio' => array(
-                    'scheme' => '#^((http|https)://(www\.)?mixcloud.com/[\S]+)$#i',
-                    'id'     => '1',
-                ),
+                'scheme' => '#^((http|https)://(www\.)?mixcloud.com/[\S]+)$#i',
+                'id'     => '1',
             );
             protected static $src = '//www.mixcloud.com/';
             protected static $glue = array('widget/iframe/?feed=', '?', '&amp;');
