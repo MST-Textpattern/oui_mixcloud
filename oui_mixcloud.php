@@ -35,6 +35,7 @@ namespace Oui {
 
         class Mixcloud extends Provider
         {
+            protected static $mediaType = 'audio';
             protected static $patterns = array(
                 'scheme' => '#^((http|https)://(www\.)?mixcloud.com/[\S]+)$#i',
                 'id'     => '1',
