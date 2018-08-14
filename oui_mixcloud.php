@@ -29,46 +29,45 @@
  * @package Oui\Player
  */
 
-namespace Oui {
+namespace Oui;
 
-    if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Provider')) {
 
-        class Mixcloud extends Provider
-        {
-            protected static $mediaType = 'audio';
-            protected static $patterns = array(
-                'scheme' => '#^((http|https)://(www\.)?mixcloud.com/[\S]+)$#i',
-                'id'     => '1',
-            );
-            protected static $src = '//www.mixcloud.com/';
-            protected static $glue = array('widget/iframe/?feed=', '?', '&amp;');
-            protected static $dims = array(
-                'width'  => '100%',
-                'height' => '400',
-                'ratio'  => '',
-            );
-            protected static $params = array(
-                'autoplay'     => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'light'        => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'hide_artwork' => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'hide_cover'   => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'mini'         => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-            );
-        }
+    class Mixcloud extends Provider
+    {
+        protected static $srcBase = '//www.mixcloud.com/';
+        protected static $srcGlue = array('widget/iframe/?feed=', '?', '&amp;');
+        protected static $iniDims = array(
+            'width'  => '100%',
+            'height' => '400',
+            'ratio'  => '',
+        );
+        protected static $iniParams = array(
+            'autoplay'     => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'light'        => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'hide_artwork' => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'hide_cover'   => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'mini'         => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+        );
+        protected static $mediaType = 'audio';
+        protected static $mediaPatterns = array(
+            'scheme' => '#^(https?://(www\.)?mixcloud.com/[\S]+)$#i',
+            'id'     => '1',
+        );
     }
 }
