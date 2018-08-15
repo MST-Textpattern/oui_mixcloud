@@ -6,6 +6,7 @@ oui_player_mixcloud_prefs => Afficher les préférences du lecteur Mixcloud
 oui_player_mixcloud_width => Largeur du lecteur
 oui_player_mixcloud_height => Hauteur du lecteur
 oui_player_mixcloud_ratio => Ratio utilisé en l'absence de l'une des dimensions
+oui_player_mixcloud_responsive => Rendre les lecteurs adaptatifs à partir des dimensions fournies
 oui_player_mixcloud_autoplay => Lecture automatique
 oui_player_mixcloud_light => Activer le thème clair
 oui_player_mixcloud_hide_artwork => Cacher le visuel d'arrière-plan

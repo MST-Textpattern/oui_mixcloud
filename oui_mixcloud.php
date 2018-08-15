@@ -38,9 +38,13 @@ if (class_exists('Oui\Provider')) {
         protected static $srcBase = '//www.mixcloud.com/';
         protected static $srcGlue = array('widget/iframe/?feed=', '?', '&amp;');
         protected static $iniDims = array(
-            'width'  => '100%',
-            'height' => '400',
-            'ratio'  => '',
+            'width'      => '100%',
+            'height'     => '400',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
         );
         protected static $iniParams = array(
             'autoplay'     => array(

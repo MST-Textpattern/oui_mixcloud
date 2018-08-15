@@ -6,6 +6,7 @@ oui_player_mixcloud_prefs => Display the Mixcloud player preferences
 oui_player_mixcloud_width => Player width
 oui_player_mixcloud_height => Player height
 oui_player_mixcloud_ratio => Player ratio by default
+oui_player_mixcloud_responsive => Render responsive players from the provided dimensions
 oui_player_mixcloud_autoplay => Automatic playing
 oui_player_mixcloud_light => Enables the light theme
 oui_player_mixcloud_hide_artwork => Hides the artwork
