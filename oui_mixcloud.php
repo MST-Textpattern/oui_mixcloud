@@ -31,9 +31,9 @@
 
 namespace Oui;
 
-if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Player\Provider')) {
 
-    class Mixcloud extends Provider
+    class Mixcloud extends Player\Provider
     {
         protected static $srcBase = '//www.mixcloud.com/';
         protected static $srcGlue = array('widget/iframe/?feed=', '?', '&amp;');
