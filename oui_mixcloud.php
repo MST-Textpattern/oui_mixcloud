@@ -33,8 +33,11 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Mixcloud extends Player\Provider
+    class Mixcloud extends Player\Oembed
     {
+        protected static $endPoint = 'https://www.mixcloud.com/oembed/?url=';
+        protected static $URLBase = '';
+
         protected static $srcBase = '//www.mixcloud.com/';
         protected static $srcGlue = array('widget/iframe/?feed=', '?', '&amp;');
         protected static $iniDims = array(
