@@ -33,9 +33,9 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Mixcloud extends Player\Oembed
+    class Mixcloud extends Player\OEmbed
     {
-        protected static $endPoint = 'https://www.mixcloud.com/oembed/?url=';
+        protected static $endPoint = 'https://www.mixcloud.com/oembed/';
         protected static $URLBase = '';
 
         protected static $srcBase = '//www.mixcloud.com/';
